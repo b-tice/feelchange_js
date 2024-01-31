@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Feel Change App</title>
+    <title>Data Selfie App</title>
     
   </head>
   <body>
     <h1>Feel Change App</h1>
-    <p>
-      latitude: <span id="latitude"></span>&deg;<br />
-      longitude: <span id="longitude"></span>&deg;
-    </p>
+    
     <button id="feelchange">feelchange</button>
     <script>
       
@@ -32,19 +29,11 @@
         console.log(json);
       });
 
-      if ("geolocation" in navigator) {
-        console.log("geolocation available");
-        navigator.geolocation.getCurrentPosition(async (position) => {
-          lat = position.coords.latitude;
-          lon = position.coords.longitude;
-          document.getElementById("latitude").textContent = lat;
-          document.getElementById("longitude").textContent = lon;
-        });
-      } else {
-        console.log("geolocation not available");
-      }
+     
     </script>
 
     
   </body>
 </html>
+
+

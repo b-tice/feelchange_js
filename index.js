@@ -37,7 +37,7 @@ app.post("/api", (request, response) => {
   database.insert(data);
   response.json({
     status: "success",
-    latitude: data.lat,
-    longitude: data.lon,
+    state: content,
+    
   });
 });

@@ -121,5 +121,53 @@ app.post("/api", (request, response) => {
     
   });
   
+  
+  app.post("/api3", (request, response) => {
+    
+    console.log("You clicked ambient button!");
+    console.log(request.body);
+    const data = request.body;
+    const timestamp = Date.now();
+    
+    fs.readFile('public/ambient.txt', 'utf8', function (err, data) {
+    
+      if (err) throw err;
+      console.log('Data in ambient.txt:');
+      console.log(data)
+      data_int = parseInt(data, 10); 
+      obj = JSON.parse(data);
+    });
+    
+    if(data_int == 0) {
+    
+      fs.writeFile('public/ambient.txt', content, err => {
+        if (err) {
+          console.error(err);
+        } 
+        else {
+          console.log('File Written OK: 1');// file written successfully
+        }
+      });    
+    }
+    
+    else if(data_int == 1)  {
+        
+    fs.writeFile('public/ambient.txt', content_zero, err => {
+      if (err) {
+        console.error(err);
+      } 
+      else {
+        console.log('File Written OK: 0');// file written successfully
+      }
+    });       
+  }
+   
+    
+    
+  });
+  
+  
+  
+  
 });
 

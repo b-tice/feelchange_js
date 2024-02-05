@@ -24,6 +24,7 @@
     
     <button id="feelchange">feelchange</button>
     <button id="filtersweep">filtersweep</button>
+    <button id ="ambient">ambient</button>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
     
@@ -33,6 +34,7 @@
       
       const button = document.getElementById("feelchange");
       const button2 = document.getElementById("filtersweep");
+      const button3 = document.getElementById("ambient");
       
       button.addEventListener("click", async (event) => {
         
@@ -67,6 +69,24 @@
         const response2 = await fetch("/api2", options2);
         const json2 = await response2.json();
         console.log(json2);
+                
+      });
+      
+      button3.addEventListener("click", async (event) => {
+        
+        const data3 = { state, filter };
+        const options3 = {
+          
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data3),
+        };
+        
+        const response3 = await fetch("/api3", options3);
+        const json3 = await response3.json();
+        console.log(json3);
                 
       });
 

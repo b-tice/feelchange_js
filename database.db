@@ -44,6 +44,7 @@
 {"timestamp":1707155102253,"_id":"8g057KqOAUKTRsTC"}
 {"timestamp":1707155112780,"_id":"8kGKlAWbJp2Wwwof"}
 {"timestamp":1706743020573,"_id":"8mJbSYW0Uw6xynNW"}
+{"timestamp":1707159380137,"_id":"9W3mBF20P6GQc7fl"}
 {"timestamp":1706852747784,"_id":"9jJZutcnTB126Crf"}
 {"timestamp":1706811134074,"_id":"9mxeQrKil0xXLY1M"}
 {"timestamp":1706811142069,"_id":"9rGhcf3V8YNJCbwa"}
@@ -96,6 +97,7 @@
 {"timestamp":1706820648337,"_id":"GPYqN6tzHZ0Z5OVa"}
 {"lat":32.8749494,"lon":-117.2222831,"timestamp":1706687133568,"_id":"GcW3bLRJdHzG35qQ"}
 {"timestamp":1706938616157,"_id":"GjvnAgZ9AzbocTMf"}
+{"timestamp":1707159332873,"_id":"GqACUhHAbO8q8OIb"}
 {"timestamp":1706742871605,"_id":"GswHiB3iAwhRWH7r"}
 {"timestamp":1706938655518,"_id":"Guf51O05SJ36clzP"}
 {"timestamp":1706733444982,"_id":"Gwnu8tf7j3IMTZil"}
@@ -185,9 +187,11 @@
 {"timestamp":1706732530575,"_id":"U94n51IadBPSspvm"}
 {"timestamp":1706732522970,"_id":"UBpvZ3UTwmY3a6bF"}
 {"timestamp":1706841898594,"_id":"UEknv97o3o9XKj4y"}
+{"timestamp":1707159376133,"_id":"UJrBUb4zu1voTyii"}
 {"timestamp":1706733690628,"_id":"UTSrpfwH2V0rIZW4"}
 {"timestamp":1707153762964,"_id":"UY1bqMjmEYczzxQC"}
 {"timestamp":1706841903663,"_id":"UgqDl3pfnoexrd5X"}
+{"timestamp":1707159385982,"_id":"UvIX0pjCXjVhdGS6"}
 {"timestamp":1707155721864,"_id":"VEX4CzUp6HeFiMHt"}
 {"timestamp":1706848971285,"_id":"VI3zrMpCmCVt4Xo7"}
 {"lat":32.8749372,"lon":-117.2223306,"timestamp":1706683379286,"_id":"VKr4hOr7yaaut1iz"}
@@ -232,6 +236,7 @@
 {"timestamp":1706811098674,"_id":"b8vntwjdCmksIIH3"}
 {"timestamp":1707154553748,"_id":"bN0K3tD8HMjcb2Ri"}
 {"timestamp":1706732710296,"_id":"bP1QtxyjsQJm4JAL"}
+{"timestamp":1707159383867,"_id":"bWVvJESiCry7RcLf"}
 {"timestamp":1706733059156,"_id":"bX1uXfLhsUHdHGFx"}
 {"timestamp":1707158490752,"_id":"bY9Lw9W2KEE1trsG"}
 {"timestamp":1706811128155,"_id":"bcUBPCGkGwxOGbrb"}
@@ -260,6 +265,7 @@
 {"timestamp":1706732447024,"_id":"eoSqX58LOg26EH4T"}
 {"timestamp":1707158511893,"_id":"erOVtawkBSvPOhk7"}
 {"timestamp":1706848971966,"_id":"f1Oq9bgNBTCEr7yl"}
+{"timestamp":1707159329906,"_id":"fGdDw9YwcVZ684WE"}
 {"timestamp":1707159078454,"_id":"fOQ62crzqo6bS2dr"}
 {"timestamp":1706733513867,"_id":"fVSbBXzOSgKzqhpo"}
 {"timestamp":1706733521464,"_id":"fWCFAMB78BZPuSLm"}
@@ -301,6 +307,7 @@
 {"timestamp":1706732203879,"_id":"knV1a0oJ25KSp5bO"}
 {"timestamp":1706841895425,"_id":"kpPWa7iKCyct8w6J"}
 {"timestamp":1707154830617,"_id":"kwSgo9hcZBSS6u3Y"}
+{"timestamp":1707159391869,"_id":"kxvzxjuiAX23jFal"}
 {"timestamp":1707157804696,"_id":"lHCzrbQPaclwLDVV"}
 {"timestamp":1706811189103,"_id":"lRzMNIzFpkqN16ji"}
 {"timestamp":1707153870905,"_id":"lceXCAj70JLkypBa"}
@@ -315,6 +322,7 @@
 {"timestamp":1706938637158,"_id":"nAECa4vnJ7sp46tV"}
 {"timestamp":1706743010601,"_id":"nK0kRvO4XAyvAgL7"}
 {"timestamp":1707153878368,"_id":"nNzSP4JsIPmImUbd"}
+{"timestamp":1707159393877,"_id":"nQOBdapYoCP5sGd0"}
 {"timestamp":1706732456579,"_id":"nZhHNb5TCmQlkeYE"}
 {"timestamp":1707158510084,"_id":"nc7DXrEwKTJYuBvw"}
 {"timestamp":1706943566340,"_id":"nejsQWvKyCyZvgLj"}
@@ -324,6 +332,7 @@
 {"timestamp":1706740863090,"_id":"oSIc1FeejyoMpSo5"}
 {"timestamp":1706732456853,"_id":"oTRyYpKEoon3E53K"}
 {"timestamp":1706732768489,"_id":"oVIrsAQMLDY9oLXT"}
+{"timestamp":1707159635871,"_id":"oX8SHYadtu0a0vKn"}
 {"timestamp":1706811227003,"_id":"ob2KZGrMTD3fagRf"}
 {"timestamp":1706732516032,"_id":"okwZCn1cJZFL7fwa"}
 {"timestamp":1706938628964,"_id":"otEObYHX4nzUg1m6"}
@@ -398,3 +407,14 @@
 {"timestamp":1707157549466,"_id":"zeaibjH6buAKtNFX"}
 {"timestamp":1706733568483,"_id":"zic6MSdGkQB2vZsB"}
 {"timestamp":1706732821601,"_id":"zsspV7yncyrLA4A3"}
+{"timestamp":1707159839068,"_id":"cO1Ise25VGRC546o"}
+{"timestamp":1707159840809,"_id":"RqG6MdVqUTkqY086"}
+{"timestamp":1707159844750,"_id":"S8A0Al9H5ugSa6Qk"}
+{"timestamp":1707159885499,"_id":"QTjR6shDdeZN5McC"}
+{"timestamp":1707159887416,"_id":"k57lsteMiQmrS56R"}
+{"timestamp":1707159889115,"_id":"AYvhwQG112BVxzUt"}
+{"timestamp":1707159891967,"_id":"XHNIMeGIrJ1zWORK"}
+{"timestamp":1707159894077,"_id":"5EEJTCsosIQdKDjU"}
+{"timestamp":1707159897095,"_id":"pnB1s8y6tjupJkRA"}
+{"timestamp":1707159899517,"_id":"KkAgFjT8ivn5bIbZ"}
+{"timestamp":1707159902852,"_id":"kG5gGbB1V3L3EuWO"}

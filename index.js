@@ -4,6 +4,8 @@ const fs = require('fs');
 
 const content_zero =  '0';
 const content =       '1';
+const content_two =   '2';
+const content_three = '3';
 
 const app = express();
 
@@ -53,10 +55,9 @@ app.post("/api", (request, response) => {
       }
     });    
   }
-  else {
-    
-    if(data_int == 1) {
-    
+  
+  else if(data_int == 1)  {
+        
     fs.writeFile('public/test.txt', content_zero, err => {
       if (err) {
         console.error(err);
@@ -64,12 +65,10 @@ app.post("/api", (request, response) => {
       else {
         console.log('File Written OK: 0');// file written successfully
       }
-    });    
+    });       
   }
+  
     
-  }
-  
-  
   data.timestamp = timestamp;
   database.insert(data);
   response.json({
@@ -81,6 +80,43 @@ app.post("/api", (request, response) => {
   app.post("/api2", (request, response) => {
     
     console.log("You clicked filter button!");
+    console.log(request.body);
+    const data = request.body;
+    const timestamp = Date.now();
+    
+    fs.readFile('public/filter.txt', 'utf8', function (err, data) {
+    
+      if (err) throw err;
+      console.log('Data in filter.txt:');
+      console.log(data)
+      data_int = parseInt(data, 10); 
+      obj = JSON.parse(data);
+    });
+    
+    if(data_int == 0) {
+    
+      fs.writeFile('public/filter.txt', content, err => {
+        if (err) {
+          console.error(err);
+        } 
+        else {
+          console.log('File Written OK: 1');// file written successfully
+        }
+      });    
+    }
+    
+    else if(data_int == 1)  {
+        
+    fs.writeFile('public/filter.txt', content_zero, err => {
+      if (err) {
+        console.error(err);
+      } 
+      else {
+        console.log('File Written OK: 0');// file written successfully
+      }
+    });       
+  }
+   
     
     
   });

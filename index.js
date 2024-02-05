@@ -1,15 +1,19 @@
 const express = require('express');
 const Datastore = require('nedb');
 const fs = require('fs');
-const content = '1';
-const content_zero = '0';
+
+const content_zero =  '0';
+const content =       '1';
+
 const app = express();
 
 var obj;
 var data_int;
 
 const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
+
   console.log(`Starting server at ${port}`);
 });
 
@@ -23,12 +27,14 @@ database.loadDatabase();
 
 
 app.post("/api", (request, response) => {
+  
   console.log("I got a request!");
   console.log(request.body);
   const data = request.body;
   const timestamp = Date.now();
   
   fs.readFile('public/test.txt', 'utf8', function (err, data) {
+    
     if (err) throw err;
     console.log('Data in test.txt:');
     console.log(data)
@@ -71,4 +77,13 @@ app.post("/api", (request, response) => {
     state: content,
     
   });
+  
+  app.post("/api2", (request, response) => {
+    
+    console.log("You clicked filter button!");
+    
+    
+  });
+  
 });
+

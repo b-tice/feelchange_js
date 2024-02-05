@@ -1,36 +1,78 @@
+<!-- Written by Brian Tice Feb 5. 2024 -->
+<!-- Web Server for Audio Interactions -->
+
 <!DOCTYPE html>
+
 <html lang="en">
+  
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Feel Change App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
     
   </head>
+ 
+  
+  
   <body>
+    
     <h1>Feel Change App</h1>
     
     <button id="feelchange">feelchange</button>
+    <button id="filtersweep">filtersweep</button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    
     <script>
-      let lat, lon;
+      
+      let state, filter; // not used yet
+      
       const button = document.getElementById("feelchange");
+      const button2 = document.getElementById("filtersweep");
+      
       button.addEventListener("click", async (event) => {
-        const data = { lat, lon };
+        
+        const data = { state, filter };
         const options = {
+          
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
         };
+        
         const response = await fetch("/api", options);
         const json = await response.json();
         console.log(json);
+                
+      });
+      
+      button2.addEventListener("click", async (event) => {
+        
+        const data2 = { state, filter };
+        const options2 = {
+          
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data2),
+        };
+        
+        const response2 = await fetch("/api2", options2);
+        const json2 = await response2.json();
+        console.log(json2);
+                
       });
 
      
     </script>
-
-    
+        
   </body>
 </html>
+

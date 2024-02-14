@@ -16,11 +16,20 @@
     
   </head>
  
-  
+  <style>
+    body {
+      background-image: url('https://cdn.glitch.global/fca6a09b-eb8c-49f0-b442-3e4f1c792804/shaping.jpg?v=1706742652187');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}
+</style>
   
   <body>
     
     <h1>Feel Change App</h1>
+    
+    
     
     <button id="feelchange">feelchange</button>
     <button id="filtersweep">filtersweep</button>
@@ -29,6 +38,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
     
     <script>
+      
+      
+      async function getData() {
+        const response = await fetch("/api");
+        const data = await response.json();
+
+        console.log(data);
+      }
+      
+      getData();
+      
       
       let state, filter; // not used yet
       
@@ -51,6 +71,7 @@
         const response = await fetch("/api", options);
         const json = await response.json();
         console.log(json);
+        getData();
                 
       });
       
@@ -69,6 +90,7 @@
         const response2 = await fetch("/api2", options2);
         const json2 = await response2.json();
         console.log(json2);
+        getData();
                 
       });
       
@@ -87,6 +109,8 @@
         const response3 = await fetch("/api3", options3);
         const json3 = await response3.json();
         console.log(json3);
+        getData();
+        
                 
       });
 
